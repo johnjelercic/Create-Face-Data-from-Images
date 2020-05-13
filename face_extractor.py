@@ -20,7 +20,7 @@ if not os.path.exists('faces'):
 count = 0
 for file in os.listdir(base_dir + 'images'):
 	file_name, file_extension = os.path.splitext(file)
-	if (file_extension in ['.png','.jpg']):
+	if (file_extension in ['.png','.jpg','.JPG']):
 		image = cv2.imread(base_dir + 'images/' + file)
 
 		(h, w) = image.shape[:2]
